@@ -1,0 +1,100 @@
+@import url(headerAndFooter.css);
+
+.informacoes{
+    background-image: url(imagens\ css/fundo-contato.png);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 40px 40px;
+    margin-top: -35px;  
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";     }
+
+    .titulo-entre-contato{
+        padding: 20px;
+        margin-top: -80px;
+        width: 400px;
+        font-size: 30px;
+        -webkit-text-fill-color: #082d3f;
+    }
+    .entre-em-contato{
+        background-color: #ffffff;
+        width: 400px;
+        height: 400px;
+        margin-left: 140px;
+        padding: 100px 300px;
+        border-radius: 10px 0px 0px 10px;
+        text-align: center;
+    }
+        .campos-form{
+            padding: 20px;
+            width: 800px;
+            border: solid;
+            border-radius: 10px;
+            border-width: 2px;
+            margin: 10px  -215px;
+            font-size: medium;  
+        }
+        .textarea-mensagem{
+            resize: none;
+            padding: 20px;
+            width: 800px;
+            height: 100px;
+            margin: 10px  -215px;
+            border: solid;
+            border-radius: 10px;
+            border-width: 2px;
+            font-size: medium;
+            font-family: inherit;
+            
+        }
+        .btn-enviar-form{
+            background-image: linear-gradient(#0eabf3, #082d3f);
+            width: 127px;
+            padding: 15px;
+            margin: 20px;
+            border: none;
+            border-radius: 10px ;
+            box-shadow: 0 0 0 0 #000000, inset 2px 2px 2px 2px #0740a8;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            -webkit-text-fill-color: #fcfcfc;
+            text-shadow: 2px 2px 2px 2px #00000080;   
+        }
+        .btn-enviar-form:hover{
+            background-image: linear-gradient(#ffffff, #646dee);
+            -webkit-text-fill-color: #082d3f;
+            box-shadow: 2px 2px 2px 2px #082d3f;             
+        }
+        .btn-enviar-form:active{
+            box-shadow: 0px 0px 0px 0px #000000, inset 2px 2px 2px 2px #082d3f;
+            transform: translate(3px 3px);   
+        }   
+            
+    .contato{
+        background-color: #7e7e7e;
+        text-align: center;
+        -webkit-text-fill-color: #ffffff;
+        font-size: 17px;
+        padding: 20px;
+        width: 500px;
+        height: 560px;
+        margin-right: 137px;
+        border-radius: 0px 10px 10px 0px;
+    }    
+        .info-contatos{
+            display: inline-flex;
+            flex-direction: row;
+            padding: 15px ;
+        }
+        .api-google{
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            border: none;
+        }

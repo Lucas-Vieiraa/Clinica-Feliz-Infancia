@@ -1,0 +1,22 @@
+@import url(headerAndFooter.css);
+
+
+.Clinica-Multidisciplinar{
+    background-image: url(../css/imagens\ css/Clinica-Multidisciplinar.jpg);
+    background-repeat: no-repeat;
+    background-size: 1900px;
+    background-position: left;
+    padding: 200px;
+    margin-top: -35px;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+}
+.sobre{
+    text-align: center;
+    align-items: center;
+    margin: 50px 200px;
+}
+
+
+

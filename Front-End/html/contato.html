@@ -9,63 +9,62 @@
     </head>
     <body>
         <header>
-            <img width="200" src="imagens/logo principal.png" alt=" logo principal"/>
+            <img class="logo" src="imagens/logo principal.png" alt=" logo principal"/>
                 <nav>
                     <ul>
-                        <li> <a href="index.html" rel="Pagina-Inicial"> Inicio </a> </li>
-                        <li> <a href="about.html" rel="Informacao-clinica"> Quem Somos ? </a> </li>
-                        <li> <a href="horario.html" rel="quadro-de-horario"> Horário De Atendimento </a> </li>
-                        <li> <a href="contato.html" rel="contato-clinica"> Contato </a> </li>
-                        <li><span><a href="agendar.html" rel="agendamento-online"> Agendamento Online</a></span></li>
+                        <li> <a class="btn-link-nav" href="index.html" rel="Pagina-Inicial" > INICIO </a> </li>
+                        <li> <a class="btn-link-nav" href="about.html" rel="Informacao-clinica"> A CLÍNICA </a> </li>
+                        <li> <a class="btn-link-nav" href="horario.html" rel="quadro-de-horario"> HORÁRIO DE ATENDIMENTO </a> </li>
+                        <li> <a class="btn-link-nav" href="contato.html" rel="contato-clinica"> CONTATO </a> </li>
+                        <li><span><a class="btn-Agendar-Consulta" href="agendar.html" rel="agendamento-online"> AGENDAR CONSULTA</a></span></li>
                     </ul>
                 </nav>
         </header>
         <main>
-            <article>
-                <img width="500" src="imagens/fundo contato.png" alt="imagem de fundo ">
-                <section>
+            <section class="informacoes">
+
+                <section class="entre-em-contato">
                     <form action="#" onsubmit="">
-                        <H2> Entre em Contato Conosco </H2>
-                        <input type="text" name="nome" placeholder="Nome"><br>
-                        <input type="email" name="email" placeholder="E-mail"><br>
-                        <input type="text" name="assunto" placeholder="Assunto"><br>
-                        <textarea name="mensagem" placeholder="Mensagem" cols="30" rows="10"></textarea> <br>
-                        <button type="reset"> Limpar Campos </button>
-                        <button type="submit"> Enviar </button>
+                        <H2 class="titulo-entre-contato">  Entre em Contato Conosco </H2>
+                        <input class="campos-form" type="text" name="nome" placeholder="Nome"><br>
+                        <input class="campos-form" type="email" name="email" placeholder="E-mail"><br>
+                        <input class="campos-form" type="text" name="assunto" placeholder="Assunto"><br>
+                        <textarea class="textarea-mensagem" name="mensagem" placeholder="Mensagem" cols="30" rows="10"></textarea> <br>
+                        <button class="btn-enviar-form" type="reset"> LIMPAR CAMPOS </button>
+                        <button class="btn-enviar-form" type="submit"> ENVIAR </button>
                     </form>
                 </section>
-                <section>
+         
+                <section class="contato">
                     <h2> Contato </h2>
-                    <p> Dúvidas? Entre em contato pelos telefones ou pelo e-mail para receber mais informações </p>
+                    <p class="info-contatos" > Dúvidas? Entre em contato pelos telefones ou pelo e-mail para receber mais informações </p>
                     <p>
-                        <img width="30" src="imagens/icon whatsapp.png" alt="ícone logo whatsapp">
-                        <a href="tel:(55) 9 1234-5678">(55) 9 1234-5678</a> 
+                        <a class="info-contatos" href="tel:(55) 9 1234-5678">Whatsapp - (55) 9 1234-5678</a> 
                     </p>
                     <p>
-                        <img width="20" src="imagens/icon email.png" alt="ícone logo email">
-                        <a href="#">contato@clinicafelizinfancia.com.br</a>
+                        <a class="info-contatos" href="mailto:contato@clinicafelizinfancia.com.br">contato@clinicafelizinfancia.com.br</a>
                     </p>
                     <h2> Localização </h2>
-                    <img width="20" src="imagens/icon localizacao.png" alt="ícone logo localização">
-                    <p>
-                        Rua das Crianças Felizes, 123 <br> 
-                        Cidade Feliz <br>
-                        Estado Alegria <br>
-                        70770-560 <br>
-                    </p>
+                        <p class="info-contatos">
+                        Rua das Crianças Felizes, Nº 123,  
+                        Cidade Feliz, 
+                        Estado Alegria, 
+                        70770-560 
+                        </p>
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110672.27653323456!2d-96.
+                       class="api-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110672.27653323456!2d-96.
                         16786676264172!3d64.31540437586061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x521a9b9b
                         8f30495f%3A0xffbb66cd466968e3!2sBaker%20Lake%2C%20NU%2C%20Canad%C3%A1!5e0!3m2!1spt-BR!2sbr!4v169
-                        4268250129!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" 
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        4268250129!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> 
                     </iframe>
                 </section>
-            </article>
+            </section>
         </main>
         <footer>
-            <h5>© 2023 Clínica Feliz Infância Todos os direitos Reservados </h5>
-            <h5> Desenvolvido por Lucas Vieira </h5>
+            <section class="rodape">
+                <h5>© 2023 Clínica Feliz Infância Todos os direitos Reservados </h5>
+                <h5><a class="link-github-Desenvolvedor" href="https://github.com/Lucas-Vieiraa" target="_blank" rel="github do desenvolvedor"> Desenvolvido por Lucas Vieira</a></h5>
+            </section>    
         </footer>
     </body>
 </html>
