@@ -16,15 +16,15 @@
             display:inline-flex;
             flex-direction: row;
             align-items: center;
-            width: 1897px;
+            width: 118.59rem;    /*1.897,44px */
         }
             .logo{
-                width: 180px;
-                margin: -30px 20px; 
+                width: 11.25rem; /*180px */
+                margin: -1.875rem 1.25rem; /* -30px  20px */
             }
 
             header nav{
-                margin-left: 450px;
+                margin-left: 28.125rem; /* 450px */
                 align-items: center;
                 
             }
@@ -34,58 +34,58 @@
                 }
                     .btn-link-nav{
                         background-image: linear-gradient(#0e8ad1, #646dee);
-                        width: 170px;
-                        padding: 15px;
-                        margin: 10px;
+                        width: 10.625rem; /* 170px */
+                        padding: .9375rem; /* 15px */
+                        margin: .625rem; /* 10px */
                         border: none;
-                        border-radius: 20px 5px;
+                        border-radius: 1.25rem .3125rem; /* 20px 5px */
                         text-decoration: none;
                         font-family: Arial, Helvetica, sans-serif;
-                        font-size: 12px;
+                        font-size: .75rem; /* 12px */
                         font-weight: bold;
                         text-align: center;
-                        text-shadow: 2px 2px 2px 2px #00000080;
+                        text-shadow: .125rem .125rem .125rem .125rem #00000080; /*2px 2px 2px 2px*/
                         -webkit-text-fill-color: #ffffff;
-                        box-shadow: 0 0 0 0 #000000, inset 2px 2px 2px 2px #ffffff;
+                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
                         transition: box-shadow 0.3s ease, transform 0.3s ease;
                     } 
                     .btn-link-nav:hover{
                         background-image: linear-gradient(#f1f1f1, #afafaf);
-                        box-shadow: 2px 2px 2px 2px #646dee;
+                        box-shadow: .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
                         -webkit-text-fill-color: #646dee; 
                     }   
 
                     .btn-link-nav:active{
-                        box-shadow: 0 0 0 0 #000000, inset 2px 2px 2px 2px #646dee;
-                        transform: translate(3px 3px);   
+                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
+                        transform: translate(.1875rem .1875rem);   /*3px 3px*/
                     }
 
                     .btn-Agendar-Consulta{
                         background-image: linear-gradient(#ffffff, #646dee);
                         display: inline-block;
-                        width: 200px;
-                        padding: 15px;
-                        margin: 20px;
+                        width: 12.5rem; /*200px*/
+                        padding: .9375rem; /*15px*/
+                        margin: 1.25rem; /*20px*/
                         border: none;
-                        border-radius: 20px 5px;
-                        box-shadow: 0 0 0 0 #000000, inset 2px 2px 2px 2px #646dee;
+                        border-radius: 1.25rem .3125rem; /*20px 5px*/
+                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
                         transition: box-shadow 0.3s ease, transform 0.3s ease;
                         text-decoration: none;
                         font-family: Arial, Helvetica, sans-serif;
-                        font-size: 12px;
+                        font-size: .75rem; /*12px*/
                         font-weight: bold;
                         text-align: center;
                         -webkit-text-fill-color: #082d3f;
-                        text-shadow: 2px 2px 2px 2px #00000080;  
+                        text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
                     }
                     .btn-Agendar-Consulta:hover{
                         background-image: linear-gradient(#0e8ad1, #646dee);
-                        box-shadow: 2px 2px 2px 2px #ffffff;
+                        box-shadow: .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
                         -webkit-text-fill-color: #ffffff;
                     }
                     .btn-Agendar-Consulta:active{
-                        box-shadow: 0px 0px 0px 0px black, inset 2px 2px 2px 2px #ffffff;
-                        transform: translate(3px 3px);   
+                        box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
+                        transform: translate(.1875rem .1875rem);   /*3px 3px*/
                     }
 
                     .btn-Agendar-Consulta-Online{
@@ -93,43 +93,43 @@
                         display: inline-block ;
                         align-items: center;
                         text-align: center;
-                        width: 300px;
-                        height: 30px;
-                        padding: 20px;
-                        margin: 20px;
+                        width: 18.75rem; /*300px*/
+                        height: 1.875rem; /*30px*/
+                        padding: 1.25rem; /*20px*/
+                        margin: 1.25rem; /*20px*/
                         border: none;
-                        border-radius: 20px 5px;
-                        box-shadow: 0 0 0 0 #000000, inset 2px 2px 2px 2px #646dee;
+                        border-radius: 1.25rem .3125rem; /*20px 5px*/
+                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
                         transition: box-shadow 0.3s ease, transform 0.3s ease;
                         text-decoration: none;
                         font-family: Arial, Helvetica, sans-serif;
-                        font-size: 20px;
+                        font-size: 1.25rem; /*20px*/
                         font-weight: bold;
                         -webkit-text-fill-color: #082d3f;
-                        text-shadow: 2px 2px 2px 2px #00000080;  
+                        text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
                     }
                     .btn-Agendar-Consulta-Online:hover{
                         background-image: linear-gradient(#0e8ad1, #646dee);
-                        box-shadow: 2px 2px 2px 2px #ffffff;
+                        box-shadow: .125rem .125rem .125rem .125rem #ffffff;    /*2px 2px 2px 2px*/
                         -webkit-text-fill-color: #ffffff;
                     }
                     .btn-Agendar-Consulta-Online:active{
-                        box-shadow: 0px 0px 0px 0px black, inset 2px 2px 2px 2px #ffffff;
-                        transform: translate(3px 3px);   
+                        box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #ffffff;   /*2px 2px 2px 2px*/
+                        transform: translate(.1875rem .1875rem);   /*3px  3px*/
                     }
                          
         footer{
             background-color: #082d3f;
-            width: 1897px;
+            width: 118.59rem;    /*1.897,44px */
             text-align: center;
         }
             .rodape{
                 display: inline-flex;
                 flex-direction: row;
                 justify-content: space-between;
-                width: 600px;
-                padding: 50px;
-                font-size: 18px;
+                width: 37.5rem; /*600px*/
+                padding: 3.125rem; /*50px*/
+                font-size: 18px; /*18px*/
                -webkit-text-fill-color: #ffffff;
             }
             .link-github-Desenvolvedor{
