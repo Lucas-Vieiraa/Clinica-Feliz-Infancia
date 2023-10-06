@@ -3,19 +3,19 @@
 .Clinica-Multidisciplinar{
     background-image: url(imagens\ css/Clinica-Multidisciplinar.jpg);
     background-repeat: no-repeat;
-    background-size: 1900px; /*118.75rem*/
+    background-size: 118.75rem; /*1900px*/
     background-position: left;
     display: flexbox;
-    padding: 200px; /*12.5rem*/
-    margin-top: -35px; /*-2.1875rem*/
+    padding: 12.5rem; /*200px*/
+    margin-top: -2.1875rem; /*-35px*/
     text-align: center;
     align-items: center;
-    font-size: 50px; /*3.125rem*/
+    font-size: 3.125rem; /*50px*/
 }
 .sobre{
     text-align: center;
     align-items: center;
-    margin: 50px 200px; /* 3.125rem 12.5rem*/
+    margin: 3.125rem 12.5rem; /* 50px 200px*/
 }
 
 /*Mobile*/
@@ -46,9 +46,69 @@
         align-items: center;
         text-align:center;
         flex-wrap: wrap;
-        margin-left: 0px;
-        font-size: 15px;
-        margin-top: -50px;
+        margin-left: 0rem;
+        font-size: .9375rem;
+        margin-top: -3.125rem;
     }
-
 }
+    /*Extra Small Devices */
+    @media screen and (min-width:481px) and (max-width:767px){
+
+        .Clinica-Multidisciplinar{
+            background-size:62.5rem;
+            display: wrap;
+            flex-wrap: wrap;
+            text-align: center; 
+            margin-top: -10rem;
+        }
+            .titulo-clinica{
+                margin-top: 2.5rem;
+                font-size:3.125rem;
+            }
+            .btn-Agendar-Consulta-Online{
+                display: flex;
+                flex-direction: row;
+                margin-left: 3.75rem;
+                width: 200px;
+            }
+       
+        .sobre{
+            display: wrap;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align:center;
+            font-size: 1.25rem;
+            margin-top: -0.625rem;
+        }
+    }
+        /*Small Tablets*/
+        @media screen and (min-width:768px) and (max-width:991px){
+
+            .Clinica-Multidisciplinar{
+                background-size:62.5rem;
+                display: wrap;
+                flex-wrap: wrap;
+                text-align: center; 
+                margin-top: -10rem;
+            }
+                .titulo-clinica{
+                    margin-top: 5rem;
+                    font-size:3.125rem;
+                }
+                .btn-Agendar-Consulta-Online{
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 10.625rem;
+                    width: 12.5rem;
+                }
+           
+            .sobre{
+                display: wrap;
+                flex-wrap: wrap;
+                align-items: center;
+                text-align:center;
+                font-size: 1.25rem;
+                margin-top: -0.625rem;
+            }
+
+    }
