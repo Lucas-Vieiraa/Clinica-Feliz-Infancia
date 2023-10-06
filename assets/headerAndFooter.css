@@ -28,95 +28,99 @@
                 align-items: center;
                 
             }
-                header nav ul li {
-                    display: inline-flex;
-            
-                }
-                    .btn-link-nav{
-                        background-image: linear-gradient(#0e8ad1, #646dee);
-                        width: 10.625rem; /* 170px */
-                        padding: .9375rem; /* 15px */
-                        margin: .625rem; /* 10px */
-                        border: none;
-                        border-radius: 1.25rem .3125rem; /* 20px 5px */
-                        text-decoration: none;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: .75rem; /* 12px */
-                        font-weight: bold;
-                        text-align: center;
-                        text-shadow: .125rem .125rem .125rem .125rem #00000080; /*2px 2px 2px 2px*/
-                        -webkit-text-fill-color: #ffffff;
-                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
-                        transition: box-shadow 0.3s ease, transform 0.3s ease;
-                    } 
-                    .btn-link-nav:hover{
-                        background-image: linear-gradient(#f1f1f1, #afafaf);
-                        box-shadow: .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
-                        -webkit-text-fill-color: #646dee; 
-                    }   
+                .btn-Menu{
+                    display: none;
+                }            
 
-                    .btn-link-nav:active{
-                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
-                        transform: translate(.1875rem .1875rem);   /*3px 3px*/
+                    header nav ul li {
+                        display: inline-flex;
+                
                     }
+                        .btn-link-nav{
+                            background-image: linear-gradient(#0e8ad1, #646dee);
+                            width: 10.625rem; /* 170px */
+                            padding: .9375rem; /* 15px */
+                            margin: .625rem; /* 10px */
+                            border: none;
+                            border-radius: 1.25rem .3125rem; /* 20px 5px */
+                            text-decoration: none;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: .75rem; /* 12px */
+                            font-weight: bold;
+                            text-align: center;
+                            text-shadow: .125rem .125rem .125rem .125rem #00000080; /*2px 2px 2px 2px*/
+                            -webkit-text-fill-color: #ffffff;
+                            box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
+                            transition: box-shadow 0.3s ease, transform 0.3s ease;
+                        } 
+                        .btn-link-nav:hover{
+                            background-image: linear-gradient(#f1f1f1, #afafaf);
+                            box-shadow: .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
+                            -webkit-text-fill-color: #646dee; 
+                        }   
 
-                    .btn-Agendar-Consulta{
-                        background-image: linear-gradient(#ffffff, #646dee);
-                        display: inline-block;
-                        width: 12.5rem; /*200px*/
-                        padding: .9375rem; /*15px*/
-                        margin: 1.25rem; /*20px*/
-                        border: none;
-                        border-radius: 1.25rem .3125rem; /*20px 5px*/
-                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
-                        transition: box-shadow 0.3s ease, transform 0.3s ease;
-                        text-decoration: none;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: .75rem; /*12px*/
-                        font-weight: bold;
-                        text-align: center;
-                        -webkit-text-fill-color: #082d3f;
-                        text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
-                    }
-                    .btn-Agendar-Consulta:hover{
-                        background-image: linear-gradient(#0e8ad1, #646dee);
-                        box-shadow: .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
-                        -webkit-text-fill-color: #ffffff;
-                    }
-                    .btn-Agendar-Consulta:active{
-                        box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
-                        transform: translate(.1875rem .1875rem);   /*3px 3px*/
-                    }
+                        .btn-link-nav:active{
+                            box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
+                            transform: translate(.1875rem .1875rem);   /*3px 3px*/
+                        }
 
-                    .btn-Agendar-Consulta-Online{
-                        background-image: linear-gradient(#ffffff, #646dee);
-                        display: inline-block ;
-                        align-items: center;
-                        text-align: center;
-                        width: 18.75rem; /*300px*/
-                        height: 1.875rem; /*30px*/
-                        padding: 1.25rem; /*20px*/
-                        margin: 1.25rem; /*20px*/
-                        border: none;
-                        border-radius: 1.25rem .3125rem; /*20px 5px*/
-                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
-                        transition: box-shadow 0.3s ease, transform 0.3s ease;
-                        text-decoration: none;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-size: 1.25rem; /*20px*/
-                        font-weight: bold;
-                        -webkit-text-fill-color: #082d3f;
-                        text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
-                    }
-                    .btn-Agendar-Consulta-Online:hover{
-                        background-image: linear-gradient(#0e8ad1, #646dee);
-                        box-shadow: .125rem .125rem .125rem .125rem #ffffff;    /*2px 2px 2px 2px*/
-                        -webkit-text-fill-color: #ffffff;
-                    }
-                    .btn-Agendar-Consulta-Online:active{
-                        box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #ffffff;   /*2px 2px 2px 2px*/
-                        transform: translate(.1875rem .1875rem);   /*3px  3px*/
-                    }
+                        .btn-Agendar-Consulta{
+                            background-image: linear-gradient(#ffffff, #646dee);
+                            display: inline-block;
+                            width: 12.5rem; /*200px*/
+                            padding: .9375rem; /*15px*/
+                            margin: 1.25rem; /*20px*/
+                            border: none;
+                            border-radius: 1.25rem .3125rem; /*20px 5px*/
+                            box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
+                            transition: box-shadow 0.3s ease, transform 0.3s ease;
+                            text-decoration: none;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: .75rem; /*12px*/
+                            font-weight: bold;
+                            text-align: center;
+                            -webkit-text-fill-color: #082d3f;
+                            text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
+                        }
+                        .btn-Agendar-Consulta:hover{
+                            background-image: linear-gradient(#0e8ad1, #646dee);
+                            box-shadow: .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
+                            -webkit-text-fill-color: #ffffff;
+                        }
+                        .btn-Agendar-Consulta:active{
+                            box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
+                            transform: translate(.1875rem .1875rem);   /*3px 3px*/
+                        }
+
+                        .btn-Agendar-Consulta-Online{
+                            background-image: linear-gradient(#ffffff, #646dee);
+                            display: inline-block ;
+                            align-items: center;
+                            text-align: center;
+                            width: 18.75rem; /*300px*/
+                            height: 1.875rem; /*30px*/
+                            padding: 1.25rem; /*20px*/
+                            margin: 1.25rem; /*20px*/
+                            border: none;
+                            border-radius: 1.25rem .3125rem; /*20px 5px*/
+                            box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
+                            transition: box-shadow 0.3s ease, transform 0.3s ease;
+                            text-decoration: none;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 1.25rem; /*20px*/
+                            font-weight: bold;
+                            -webkit-text-fill-color: #082d3f;
+                            text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
+                        }
+                        .btn-Agendar-Consulta-Online:hover{
+                            background-image: linear-gradient(#0e8ad1, #646dee);
+                            box-shadow: .125rem .125rem .125rem .125rem #ffffff;    /*2px 2px 2px 2px*/
+                            -webkit-text-fill-color: #ffffff;
+                        }
+                        .btn-Agendar-Consulta-Online:active{
+                            box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #ffffff;   /*2px 2px 2px 2px*/
+                            transform: translate(.1875rem .1875rem);   /*3px  3px*/
+                        }
                          
         footer{
             background-color: #082d3f;
@@ -136,3 +140,120 @@
                 -webkit-text-fill-color: #ffffff;
                 text-decoration: none;
             }
+ 
+            /*Mobile*/
+    @media screen and (max-width:480px) {
+
+        header{
+            width: 100%;
+            align-items: flex-start;
+        }
+            header nav{
+                display: block;
+            }
+                .btn-Menu{
+                    display: flex;
+                    margin-top: 45px; 
+                    margin-left: -260px;
+                    background-image: url(imagens\ css/icon-btn-hamburguer.svg); 
+                    width: 40px;
+                    height: 30px; 
+                    background-repeat: no-repeat;
+                    background-size: 30px;  background-position: 5px;
+                    border: none;
+                    border-radius: 5px;
+                    text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
+                    box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
+                    transition: box-shadow 0.3s ease, transform 0.3s ease;          
+                }
+                .btn-Menu:active{
+                    box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #646dee;   /*2px 2px 2px 2px*/
+                    transform: translate(.1875rem .1875rem);   /*3px  3px*/
+                }
+                    .menu{
+                        display: none;
+                        position: relative;
+                        top: 20px;
+                        right: 200%;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .nav.active .menu{
+                        display: flex;
+                    }
+                         .btn-link-nav{
+                            font-size: 10px;
+                            width: 150px;
+                        }
+                        .btn-Agendar-Consulta{
+                            margin: 30px;
+                        }
+                        .btn-Agendar-Consulta-Online{
+                            width: 200px;
+                            font-size: 12px;
+                        }
+        footer{
+            width:100%;
+            display: flex;
+            align-items: center;
+        }
+            .rodape{
+                font-size: 15px;
+                flex-direction: column;
+                gap: 30px;
+            }
+    }
+            /*Small Tablets*/
+    @media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
+
+        header{
+            width: 100%;
+            align-items: flex-start;
+        }
+            header nav{
+                display: block;
+            }
+                .btn-Menu{
+                    display: flex;
+                    margin-top: 45px; 
+                    background-image: url(imagens\ css/icon-btn-hamburguer.svg); 
+                    width: 40px;
+                    height: 30px; 
+                    background-repeat: no-repeat;
+                    background-size: 30px;  background-position: 5px;
+                    border: none;
+                    border-radius: 5px;
+                    text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
+                    box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
+                    transition: box-shadow 0.3s ease, transform 0.3s ease;          
+                }
+               .btn-Menu:active{
+                box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #646dee;   /*2px 2px 2px 2px*/
+                 transform: translate(.1875rem .1875rem);   /*3px  3px*/
+               }
+                    .menu{
+                        display: none;
+                        position: relative;
+                        top: 20px;
+                        right: 150%;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .nav.active .menu{
+                        display: flex;
+                    }
+                        .btn-link-nav{
+                            font-size: 10px;
+                            width: 150px;
+                        }
+                        .btn-Agendar-Consulta{
+                            margin: 30px;  
+                        }
+        footer{
+            width: 100%;
+        }
+            .rodape{
+                font-size: 15px;
+            }
+
+    }

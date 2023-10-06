@@ -6,23 +6,26 @@
         <title>Página Inicial</title>
         <link rel="icon" href="imagens/icon head.png">
         <link rel="stylesheet" href="assets/index.css">
+        
     </head>
     <body>
         <header>
             <img class="logo" src="imagens/logo principal.png" alt=" logo principal"/>
-                <nav>
-                    <ul>
+                <nav class="nav">
+                    <button class="btn-Menu"></button>
+                    <script src="js/menuMobile.js"></script>
+                    <ul class="menu">
                         <li> <a class="btn-link-nav" href="index.html" rel="Pagina-Inicial" > INICIO </a> </li>
                         <li> <a class="btn-link-nav" href="about.html" rel="Informacao-clinica"> A CLÍNICA </a> </li>
                         <li> <a class="btn-link-nav" href="horario.html" rel="quadro-de-horario"> HORÁRIO DE ATENDIMENTO </a> </li>
                         <li> <a class="btn-link-nav" href="contato.html" rel="contato-clinica"> CONTATO </a> </li>
-                        <li><span><a class="btn-Agendar-Consulta" href="agendar.html" rel="agendamento-online"> AGENDAR CONSULTA</a></span></li>
+                        <li ><span><a class="btn-Agendar-Consulta" href="agendar.html" rel="agendamento-online"> AGENDAR CONSULTA</a></span></li>
                     </ul>
                 </nav>
         </header>
         <main >
             <section class="Clinica-Multidisciplinar">
-                <h1> Clínica Multidisciplinar de Pediatria </h1>
+                <h1 class="titulo-clinica"> Clínica Multidisciplinar de Pediatria </h1>
                 <a class="btn-Agendar-Consulta-Online" href="agendar.html" rel="agendamento-online"> AGENDAR CONSULTA ONLINE</a>
             </section>
             <section class="sobre">
@@ -46,4 +49,5 @@
             </section>        
         </footer>
     </body>
+    
 </html>
