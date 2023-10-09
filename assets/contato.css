@@ -4,12 +4,13 @@
     background-image: url(imagens\ css/fundo-contato.png);
     background-repeat: no-repeat;
     background-size: 125rem; /*2000px*/
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 2.5rem 2.5rem; /*40px 40px*/
-    margin-top: -2.1875rem;  /*35px*/
-    margin-bottom: 2.8125rem; /*45px*/
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";     }
+   
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";     
+}
 
     .titulo-entre-contato{
         padding: 1.25rem; /*20px*/
@@ -46,8 +47,7 @@
             border-radius: .625rem; /*10px*/
             border-width: .125rem;  /*2px*/
             font-size: medium;
-            font-family: inherit;
-            
+            font-family: inherit; 
         }
         .btn-enviar-form{
             background-image: linear-gradient(#0eabf3, #082d3f);
@@ -82,20 +82,217 @@
         text-align: center;
         -webkit-text-fill-color: #ffffff;
         font-size: 1.0625rem; /*17px*/
-        padding: 1.25rem; /*20px*/
+        padding: 20px 1.25rem; /*20px*/
         width: 31.25rem; /*500px*/
         height: 35rem; /*560px*/
-        margin-right: 8.5625rem; /*137px*/
         border-radius: 0rem .625rem .625rem 0rem; /*0px 10px 10px 0px*/
     }    
         .info-contatos{
             display: inline-flex;
+            align-items: center;
+            text-align: center;
             flex-direction: row;
             padding: .9375rem ; /*15px*/
         }
         .api-google{
             width: 25rem; /*400px*/
-            height: 15.625rem; /*250px*/
+            height: 23.125rem; /*250px*/
             border-radius: .625rem; /*10px*/
             border: none;
         }
+
+/* Mobile */
+@media screen and (max-width: 30rem){
+
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        background-size: cover ;
+        padding: 50px; 
+    }  
+
+        .entre-em-contato{
+            width: 95%;
+            border-radius: 10px; /*10px 0px 0px 10px*/
+            padding: 105px 50px; /*20px*/ 
+            margin: 0px 0px 50px 0px;
+        }
+            .titulo-entre-contato{
+                width:90%; /*25rem*/
+                font-size: large;         
+            }
+            .campos-form{
+                width: 100%; /*50rem*/
+                border-radius: 10px; /*10px*/
+                font-size: medium;  
+            }
+            .textarea-mensagem{
+                width: 100%; /*50rem*/
+                border-radius: 10px; /*10px*/
+                font-size: medium; 
+            }
+            .btn-enviar-form{
+                width: 35%;
+                font-size: x-small;
+                margin: 3px; 
+            }
+
+        .contato{
+            font-size: medium; 
+            width: 95%; /*500px*/
+            border-radius:10px; /*0rem .625rem .625rem 0rem*/
+            padding: 50px;
+        }  
+            .api-google{
+                width: 100%; /*25rem*/
+                height: 200px; /*15.625rem*/
+                border-radius: 10px; /*10px*/
+            }
+}
+
+/*Extra Small Devices */
+@media screen and (min-width:30.0625rem) and (max-width:47.9375rem){
+
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        background-size: cover ;
+        padding: 80px;
+    }  
+        .entre-em-contato{
+            width: 80%;
+            border-radius: 10px; /*10px 0px 0px 10px*/
+            padding: 105px 50px; /*20px*/ 
+            margin: 0px 0px 50px 0px;
+        }
+            .titulo-entre-contato{
+                width: 100%; /*25rem*/
+            }
+            .campos-form{
+                width: 100%; /*50rem*/
+                border-radius: 10px; /*10px*/
+                font-size: medium;  
+            }
+            .textarea-mensagem{
+                width: 100%; /*50rem*/
+                border-radius: 10px; /*10px*/
+                font-size: medium; 
+            }
+            .btn-enviar-form{
+                width: 35%;
+                font-size: x-small;
+                margin: 3px; 
+            }
+
+        .contato{
+            font-size: medium; 
+            width: 80%; /*500px*/
+            border-radius:10px; /*0rem .625rem .625rem 0rem*/
+            padding: 50px;
+        }  
+            .api-google{
+                width: 100%; /*25rem*/
+                height: 210px; /*15.625rem*/
+                border-radius: 10px; /*10px*/
+            }
+}
+
+/*Small Tablets */
+@media screen and (min-width:48rem) and (max-width:61.9375rem){
+
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        background-size: cover ;
+        padding: 80px;
+    }  
+        .entre-em-contato{
+            width: 80%;
+            border-radius: 10px; /*10px 0px 0px 10px*/
+            padding: 105px 50px; /*20px*/ 
+            margin: 0px 0px 50px 0px;
+        }
+            .titulo-entre-contato{
+                width: 100%; /*25rem*/
+            }
+            .campos-form{
+                width: 100%; /*50rem*/
+                border-radius: 10px; /*10px*/
+                font-size: medium;  
+            }
+            .textarea-mensagem{
+                width: 100%; /*50rem*/
+                border-radius: 10px; /*10px*/
+                font-size: medium; 
+            }
+            .btn-enviar-form{
+                width: 35%;
+                font-size: medium;
+                margin: 3px; 
+            }
+
+        .contato{
+            font-size: large; 
+            width: 80%; /*500px*/
+            border-radius:10px; /*0rem .625rem .625rem 0rem*/
+            padding: 70px;
+        }  
+            .api-google{
+                width: 100%; /*25rem*/
+                height: 280px ;/*15.625rem*/
+                border-radius: 10px; /*10px*/
+            }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .informacoes{
+        width: 100%;
+        background-size: cover ;
+        padding: 5%;
+        margin: 0;
+     
+    }  
+        .entre-em-contato{
+            width: 40%;
+            border-radius: 10px 0px 0px 10px; /*10px 0px 0px 10px*/
+            padding: 150px 50px; /*20px*/ 
+            margin: 0px 0px 0px 0px;
+            height: 350px;
+        }
+            .titulo-entre-contato{
+                width: 100%; /*25rem*/
+            }
+            .campos-form{
+                width: 100%; /*50rem*/
+                border-radius: 10px; /*10px*/
+                font-size: medium;  
+            }
+            .textarea-mensagem{
+                width: 100%; /*50rem*/
+                border-radius: 10px; /*10px*/
+                font-size: medium; 
+            }
+            .btn-enviar-form{
+                width: 35%;
+                font-size: medium;
+                margin: 3px; 
+            }
+
+        .contato{
+            font-size: large; 
+            width: 40%; /*500px*/
+            border-radius: 0px 10px 10px 0px;/*0rem .625rem .625rem 0rem*/
+            padding: 45px;
+            
+        }  
+            .api-google{
+                width: 100%; /*25rem*/
+                height: 12.5rem ;/*15.625rem*/
+            }
+            footer{
+                width: 100%;
+            }
+}

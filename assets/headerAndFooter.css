@@ -6,41 +6,40 @@
     list-style: none;
     box-sizing: content-box;
 }
-    body {
-        display: flexbox;
-        align-items: center;
-        }
+  
 
         header{
             background-color: #082d3f;
-            display:inline-flex;
+            display:flex;
             flex-direction: row;
-            align-items: center;
-            width: 118.59rem;    /*1.897,44px */
+            align-items: center;  
+            justify-content: space-between;
+            height: 7.5rem;
+            padding: 0 5%;
         }
             .logo{
-                width: 11.25rem; /*180px */
-                margin: -1.875rem 1.25rem; /* -30px  20px */
-            }
-
-            header nav{
-                margin-left: 28.125rem; /* 450px */
-                align-items: center;
-                
+                width: 180px; /*11.25rem */
+            
             }
                 .btn-Menu{
                     display: none;
+                    border-radius: .3125rem;
+                    background-image: url(imagens\ css/icon-btn-hamburguer.svg);
+                    background-repeat: no-repeat;
+                    background-size: 1.875rem; 
+                    background-position: .3125rem;
+                    border: none; 
                 }            
 
-                    header nav ul li {
-                        display: inline-flex;
-                
+                   .menu {
+                        display:flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 3.125rem;
                     }
-                        .btn-link-nav{
+                        .link-btn-menu{
                             background-image: linear-gradient(#0e8ad1, #646dee);
-                            width: 10.625rem; /* 170px */
                             padding: .9375rem; /* 15px */
-                            margin: .625rem; /* 10px */
                             border: none;
                             border-radius: 1.25rem .3125rem; /* 20px 5px */
                             text-decoration: none;
@@ -53,13 +52,13 @@
                             box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
                             transition: box-shadow 0.3s ease, transform 0.3s ease;
                         } 
-                        .btn-link-nav:hover{
+                        .link-btn-menu:hover{
                             background-image: linear-gradient(#f1f1f1, #afafaf);
                             box-shadow: .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
                             -webkit-text-fill-color: #646dee; 
                         }   
 
-                        .btn-link-nav:active{
+                        .link-btn-menu:active{
                             box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
                             transform: translate(.1875rem .1875rem);   /*3px 3px*/
                         }
@@ -123,14 +122,16 @@
                         }
                          
         footer{
+            display: flex;
             background-color: #082d3f;
-            width: 118.59rem;    /*1.897,44px */
+            width: 118.59rem; 
             text-align: center;
         }
             .rodape{
-                display: inline-flex;
+                display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                align-items: center;
                 width: 37.5rem; /*600px*/
                 padding: 3.125rem; /*50px*/
                 font-size: 18px; /*18px*/
@@ -141,112 +142,44 @@
                 text-decoration: none;
             }
  
-            /*Mobile*/
-    @media screen and (max-width:30rem) {
-
+    /*Mobile*/
+    @media screen and (max-width: 480px) {
         header{
-            width: 100%;
-            align-items: flex-start;
+            height: 7.5rem;
+            padding: 0 5%;
         }
-            header nav{
-                display: block;
-            }
                 .btn-Menu{
                     display: flex;
-                    margin-top: 2.8125rem; 
-                    margin-left: -16.25rem;
-                    background-image: url(imagens\ css/icon-btn-hamburguer.svg); 
                     width: 2.5rem;
-                    height: 1.875rem; 
-                    background-repeat: no-repeat;
-                    background-size: 1.875rem;  background-position: .3125rem;
-                    border: none;
-                    border-radius: .3125rem;
-                    text-shadow: 2px 2px 2px 2px #00000080;  /*.125rem .125rem .125rem .125rem*/
-                    box-shadow: 0px 0px 0px 0px #000000, inset 2px 2px 2px 2px #ffffff; /*.125rem .125rem .125rem .125rem*/
-                    transition: box-shadow 0.3s ease, transform 0.3s ease;          
+                    height: 2.1875rem; 
+                    transition: box-shadow 0.3s ease, transform 0.3s ease;        
                 }
                 .btn-Menu:active{
-                    box-shadow: 0px 0px 0px 0px black, inset 2px 2px 2px 2px #646dee;   /*.125rem .125rem .125rem .125rem*/
-                    transform: translate(3px 3px);   /*.1875rem  .1875rem*/
+                    box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #646dee;   /*.125rem .125rem .125rem .125rem*/
+                    transform: translate(.1875rem .1875rem);   /*.1875rem  .1875rem*/
+                    background-image: url(imagens\ css\icon-btn-hamburguer-active.svg);
                 }
                     .menu{
                         display: none;
-                        position: relative;
-                        top: 1.25rem;
-                        right: 200%;
+                        position: absolute;
                         flex-direction: column;
-                        align-items: center;
                     }
                     .nav.active .menu{
-                        display: flex;
+                        display: flex; 
+                        background-color: #082d3f;
+                        width: 100%;
+                        top: 7.4375rem;
+                        right: 0%;
+                        animation-duration: 1s;
                     }
                          .btn-link-nav{
                             font-size: .625rem;
                             width: 9.375rem;
                         }
                         .btn-Agendar-Consulta{
-                            margin: 1.875rem;
-                        }
-                        .btn-Agendar-Consulta-Online{
-                            width: 12.5rem;
-                            font-size: .75rem;
-                        }
-        footer{
-            width:100%;
-            display: flex;
-            align-items: center;
-        }
-            .rodape{
-                font-size: .9375rem;
-                flex-direction: column;
-                gap: 1.875rem;
-            }
-    }
-    /*Extra Small Devices*/
-    @media screen and (min-width: 30.0625rem) and (max-width: 47.9375rem) {
-        header{
-            width: 100%;
-            align-items: flex-start;
-        }
-            header nav{
-                display: block;
-            }
-                .btn-Menu{
-                    display: flex;
-                    margin-top: 2.8125rem; 
-                    background-image: url(imagens\ css/icon-btn-hamburguer.svg); 
-                    width: 2.5rem;
-                    height: 1.875rem; 
-                    background-repeat: no-repeat;
-                    background-size: 1.875rem;  background-position: .3125rem;
-                    border: none;
-                    border-radius: .3125rem;
-                    text-shadow: 2px 2px 2px 2px #00000080;  /*.125rem .125rem .125rem .125rem*/
-                    box-shadow: 0px 0px 0px 0px #000000, inset 2px 2px 2px 2px #ffffff; /*.125rem .125rem .125rem .125rem*/
-                    transition: box-shadow 0.3s ease, transform 0.3s ease;          
-                }
-                .btn-Menu:active{
-                    box-shadow: 0px 0px 0px 0px black, inset 2px 2px 2px 2px #646dee;   /*.125rem .125rem .125rem .125rem*/
-                    transform: translate(3px 3px);   /*.1875rem  .1875rem*/
-                }
-                    .menu{
-                        display: none;
-                        position: relative;
-                        top: 1.25rem;
-                        right: 150%;
-                        flex-direction: column;
-                        align-items: center;
-                    }
-                    .nav.active .menu{
-                        display: flex;
-                    }
-                         .btn-link-nav{
-                            font-size: .625rem;
-                            width: 9.375rem;
-                        }
-                        .btn-Agendar-Consulta{
-                            margin: 1.875rem;
+                            width: 12.5rem; /*200px*/
+                            padding: .9375rem; /*15px*/
+                            margin: 0rem 0rem .625rem  0rem;
                         }
                         .btn-Agendar-Consulta-Online{
                             width: 12.5rem;
@@ -254,70 +187,253 @@
                             align-items: center;
                         }
         footer{
-            width:100%;
+            width: 100%;
             display: flex;
-            align-items: center;
+           align-items: center;  
+          
         }
             .rodape{
-                font-size: 15px;
+                font-size: .9375rem;
                 flex-direction: column;
-                gap: 30px;
+                gap: 1.875rem;
+                margin: 0rem 3.125rem;
             }
-
     }
-            /*Small Tablets*/
-    @media screen and (min-width: 768px) and (max-width: 991px) {
 
+    /*Extra Small Devices*/
+    @media screen and (min-width: 481px) and (max-width: 767px) {
         header{
-            width: 100%;
-            align-items: flex-start;
+            height: 7.5rem;
+            padding: 0 5%;
         }
-            header nav{
-                display: block;
-            }
                 .btn-Menu{
                     display: flex;
-                    margin-top: 2.8125rem; 
-                    margin-left: 12.5rem;
-                    background-image: url(imagens\ css/icon-btn-hamburguer.svg); 
                     width: 2.5rem;
-                    height: 1.875rem; 
-                    background-repeat: no-repeat;
-                    background-size: 1.875rem; 
-                    background-position: .3125rem;
-                    border: none;
-                    border-radius: .3125rem;
-                    text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
-                    box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
-                    transition: box-shadow 0.3s ease, transform 0.3s ease;          
+                    height: 2.1875rem; 
+                    transition: box-shadow 0.3s ease, transform 0.3s ease;        
                 }
-               .btn-Menu:active{
-                box-shadow: 0px 0px 0px 0px black, inset 2px 2px 2px 2px #646dee;   /*.125rem .125rem .125rem .125rem*/
-                 transform: translate(3px 3px);   /*.1875rem  .1875rem*/
-               }
+                .btn-Menu:active{
+                    box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #646dee;   /*.125rem .125rem .125rem .125rem*/
+                    transform: translate(.1875rem .1875rem);   /*.1875rem  .1875rem*/
+                    background-image: url(imagens\ css\icon-btn-hamburguer-active.svg);
+                }
                     .menu{
                         display: none;
-                        position: relative;
-                        top: 1.25rem;
-                        right: 100%;
+                        position: absolute;
                         flex-direction: column;
-                        align-items: center;
                     }
                     .nav.active .menu{
-                        display: flex;
+                        display: flex; 
+                        background-color: #082d3f;
+                        width: 100%;
+                        top: 7.4375rem;
+                        right: 0%;
+                        animation-duration: 1s;
                     }
-                        .btn-link-nav{
+                         .btn-link-nav{
                             font-size: .625rem;
                             width: 9.375rem;
                         }
                         .btn-Agendar-Consulta{
-                            margin: 1.875rem;  
+                            width: 12.5rem; /*200px*/
+                            padding: .9375rem; /*15px*/
+                            margin: 0rem 0rem .625rem  0rem;
+                        }
+                        .btn-Agendar-Consulta-Online{
+                            width: 12.5rem;
+                            font-size: .75rem;
+                            align-items: center;
                         }
         footer{
             width: 100%;
+            display: flex;
+           align-items: center;  
+          
         }
             .rodape{
-                font-size: 1rem;
+                font-size: .9375rem;
+                flex-direction: column;
+                gap: 1.875rem;
+                margin: 0rem 3.125rem;
             }
     }
+    /*Small Tablets*/
+    @media screen and (min-width:768px) and (max-width:991px) {
+        header{
+            height: 7.5rem;
+            padding: 0 5%;
+        }
+                .btn-Menu{
+                    display: flex;
+                    width: 2.5rem;
+                    height: 2.1875rem; 
+                    transition: box-shadow 0.3s ease, transform 0.3s ease;        
+                }
+                .btn-Menu:active{
+                    box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #646dee;   /*.125rem .125rem .125rem .125rem*/
+                    transform: translate(.1875rem .1875rem);   /*.1875rem  .1875rem*/
+                    background-image: url(imagens\ css\icon-btn-hamburguer-active.svg);
+                }
+                    .menu{
+                        display: none;
+                        position: absolute;
+                        flex-direction: column;
+                    }
+                    .nav.active .menu{
+                        display: flex; 
+                        background-color: #082d3f;
+                        width: 100%;
+                        top: 7.4375rem;
+                        right: 0%;
+                        animation-duration: 1s;
+                    }
+                         .btn-link-nav{
+                            font-size: .625rem;
+                            width: 9.375rem;
+                        }
+                        .btn-Agendar-Consulta{
+                            width: 12.5rem; /*200px*/
+                            padding: .9375rem; /*15px*/
+                            margin: 0rem 0rem .625rem  0rem;
+                        }
+                        .btn-Agendar-Consulta-Online{
+                            width: 12.5rem;
+                            font-size: .75rem;
+                            align-items: center;
+                        }
+        footer{
+            width: 100%;
+            display: flex;
+           align-items: center;  
+        }
+            .rodape{
+                font-size: medium;
+                flex-direction: column;
+                gap: 30px;
+                margin: 0px 150px;
+            }
+}
 
+@media screen and (min-width:992) and (max-width: 1199 ) {
+    header{
+        height: 7.5rem;
+        padding: 0 5%;
+        width: 100%;
+    }
+        .logo{
+            width: 180px; /*11.25rem */
+        
+        }
+            .btn-Menu{
+                display: none;
+                border-radius: .3125rem;
+                background-image: url(imagens\ css/icon-btn-hamburguer.svg);
+                background-repeat: no-repeat;
+                background-size: 1.875rem; 
+                background-position: .3125rem;
+                border: none; 
+            }            
+
+               .menu {
+                    display:flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 3.125rem;
+                }
+                    .link-btn-menu{
+                        background-image: linear-gradient(#0e8ad1, #646dee);
+                        padding: .9375rem; /* 15px */
+                        border: none;
+                        border-radius: 1.25rem .3125rem; /* 20px 5px */
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: .75rem; /* 12px */
+                        font-weight: bold;
+                        text-align: center;
+                        text-shadow: .125rem .125rem .125rem .125rem #00000080; /*2px 2px 2px 2px*/
+                        -webkit-text-fill-color: #ffffff;
+                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
+                        transition: box-shadow 0.3s ease, transform 0.3s ease;
+                    } 
+                    .link-btn-menu:hover{
+                        background-image: linear-gradient(#f1f1f1, #afafaf);
+                        box-shadow: .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
+                        -webkit-text-fill-color: #646dee; 
+                    }   
+
+                    .link-btn-menu:active{
+                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
+                        transform: translate(.1875rem .1875rem);   /*3px 3px*/
+                    }
+
+                    .btn-Agendar-Consulta{
+                        background-image: linear-gradient(#ffffff, #646dee);
+                        display: inline-block;
+                        width: 12.5rem; /*200px*/
+                        padding: .9375rem; /*15px*/
+                        margin: 1.25rem; /*20px*/
+                        border: none;
+                        border-radius: 1.25rem .3125rem; /*20px 5px*/
+                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
+                        transition: box-shadow 0.3s ease, transform 0.3s ease;
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: .75rem; /*12px*/
+                        font-weight: bold;
+                        text-align: center;
+                        -webkit-text-fill-color: #082d3f;
+                        text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
+                    }
+                    .btn-Agendar-Consulta:hover{
+                        background-image: linear-gradient(#0e8ad1, #646dee);
+                        box-shadow: .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
+                        -webkit-text-fill-color: #ffffff;
+                    }
+                    .btn-Agendar-Consulta:active{
+                        box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #ffffff; /*2px 2px 2px 2px*/
+                        transform: translate(.1875rem .1875rem);   /*3px 3px*/
+                    }
+
+                    .btn-Agendar-Consulta-Online{
+                        background-image: linear-gradient(#ffffff, #646dee);
+                        display: inline-block ;
+                        align-items: center;
+                        text-align: center;
+                        width: 18.75rem; /*300px*/
+                        height: 1.875rem; /*30px*/
+                        padding: 1.25rem; /*20px*/
+                        margin: 1.25rem; /*20px*/
+                        border: none;
+                        border-radius: 1.25rem .3125rem; /*20px 5px*/
+                        box-shadow: 0rem 0rem 0rem 0rem #000000, inset .125rem .125rem .125rem .125rem #646dee; /*2px 2px 2px 2px*/
+                        transition: box-shadow 0.3s ease, transform 0.3s ease;
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 1.25rem; /*20px*/
+                        font-weight: bold;
+                        -webkit-text-fill-color: #082d3f;
+                        text-shadow: .125rem .125rem .125rem .125rem #00000080;  /*2px 2px 2px 2px*/
+                    }
+                    .btn-Agendar-Consulta-Online:hover{
+                        background-image: linear-gradient(#0e8ad1, #646dee);
+                        box-shadow: .125rem .125rem .125rem .125rem #ffffff;    /*2px 2px 2px 2px*/
+                        -webkit-text-fill-color: #ffffff;
+                    }
+                    .btn-Agendar-Consulta-Online:active{
+                        box-shadow: 0rem 0rem 0rem 0rem black, inset .125rem .125rem .125rem .125rem #ffffff;   /*2px 2px 2px 2px*/
+                        transform: translate(.1875rem .1875rem);   /*3px  3px*/
+                    }
+                     
+    footer{
+    
+    width: 100%;
+        
+    }
+        .rodape{
+           
+           margin: 0px 300px;
+            padding: 3.125rem; /*50px*/
+            font-size: 18px; /*18px*/
+        }
+      
+}
