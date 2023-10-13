@@ -6,8 +6,8 @@
     align-items: center;  
     background-image: url(imagens\ css/Clinica-Multidisciplinar.jpg);
     background-repeat: no-repeat;
-    background-size: 118.75rem; /*1900px*/
-    padding: 12.5rem; /*200px*/
+    background-size: cover; 
+    padding: 300px; /*300px*/
     text-align: center;
     align-items: center;
     font-size: 3.125rem; /*50px*/
@@ -15,34 +15,108 @@
 .sobre{
     display: flex;
     flex-direction: column;
-   align-items: center;
-   text-align: center;
+    text-align: center;
+    padding: 0% 20%;
     margin: 1.875rem 3.125rem; 
+    font-size: larger;
 }
 
+    /* Mobile */
+@media screen and (max-width:480px){
 
+    .Clinica-Multidisciplinar{
+        background-size: cover;
+        padding: 4.375rem;
+    }
+        .titulo-clinica{
+            font-size:larger;
+        }
+        .btn-Agendar-Consulta-Online{
+            display: flex;
+            width: 12.5rem;
+        }
+       
+    .sobre{
+        font-size: larger;
+    }
+}
 
     /*Extra Small Devices */
 @media screen and (min-width:481px) and (max-width:767px){
 
     .Clinica-Multidisciplinar{
-        background-size: cover ;
-        padding: 100px;
+        background-size: cover;
+        padding: 4.375rem;
     }
         .titulo-clinica{
-            font-size:3.125rem;
-            text-align: center;
+            font-size:larger;
         }
         .btn-Agendar-Consulta-Online{
             display: flex;
-            flex-direction: row;
-            text-align: center;
             width: 12.5rem;
         }
        
     .sobre{
-        font-size: 1.25rem; 
-        margin: 1.875rem 3.125rem; 
+        font-size: larger;
     }
 }
+
+    /*Small Tablets */
+@media screen and (min-width:768px) and (max-width:991px){
+
+    .Clinica-Multidisciplinar{
+        background-size: cover;
+        padding: 150px;
+    }
+        .titulo-clinica{
+            font-size:larger;
+        }
+        .btn-Agendar-Consulta-Online{
+            display: flex;
+            width: 12.5rem;
+        }
+           
+    .sobre{
+        font-size: larger;
+    }
+}
+
+    /*Large Tablets / Laptops */
+@media screen and (min-width:992px) and (max-width:1199px){
+
+    .Clinica-Multidisciplinar{
+        background-size: cover;
+        padding: 12.5rem;
+    }
+        .titulo-clinica{
+            font-size:larger;
+        }
+        .btn-Agendar-Consulta-Online{
+            display: flex;
+            width: 12.5rem;
+        }
+           
+    .sobre{
+        font-size: larger;
+    }
+}
+
+    /*Large Tablets / Laptops */
+    @media screen and (min-width:1200px) and (max-width:1919px){
+
+        .Clinica-Multidisciplinar{
+            background-size: cover;
+        }
+            .titulo-clinica{
+                font-size:larger;
+            }
+            .btn-Agendar-Consulta-Online{
+                display: flex;
+                width: 12.5rem;
+            }
+               
+        .sobre{
+            font-size: larger;
+        }
+    }
         
